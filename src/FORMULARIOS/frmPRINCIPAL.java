@@ -4,6 +4,13 @@
  */
 package FORMULARIOS;
 
+import FORMULARIOS.frmBuscarUsuario;
+import FORMULARIOS.frmBuscarUsuario;
+import FORMULARIOS.frmCrearPlanilla;
+import FORMULARIOS.frmCrearPlanilla;
+import FORMULARIOS.frmCrearUsuario;
+import FORMULARIOS.frmCrearUsuario;
+
 /**
  *
  * @author termi
@@ -26,12 +33,14 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jButton1 = new javax.swing.JButton();
+        jrCrearUsario = new javax.swing.JRadioButton();
+        jrVerEmpleado = new javax.swing.JRadioButton();
+        jrCrearPlanilla = new javax.swing.JRadioButton();
+        jbSalir = new javax.swing.JButton();
+        jbIngresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -39,24 +48,27 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        jRadioButton1.setText("Crear Usuario");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(jrCrearUsario);
+        jrCrearUsario.setText("Crear Usuario");
+        jrCrearUsario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                jrCrearUsarioActionPerformed(evt);
             }
         });
 
-        jRadioButton2.setText("Ver Empleado");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(jrVerEmpleado);
+        jrVerEmpleado.setText("Ver Empleado");
+        jrVerEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                jrVerEmpleadoActionPerformed(evt);
             }
         });
 
-        jRadioButton3.setText("Crear Planilla");
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(jrCrearPlanilla);
+        jrCrearPlanilla.setText("Crear Planilla");
+        jrCrearPlanilla.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
+                jrCrearPlanillaActionPerformed(evt);
             }
         });
 
@@ -67,24 +79,26 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(52, 52, 52)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton3)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jRadioButton1))
+                    .addComponent(jrCrearPlanilla)
+                    .addComponent(jrVerEmpleado)
+                    .addComponent(jrCrearUsario))
                 .addContainerGap(261, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
-                .addComponent(jRadioButton1)
+                .addComponent(jrCrearUsario)
                 .addGap(33, 33, 33)
-                .addComponent(jRadioButton2)
+                .addComponent(jrVerEmpleado)
                 .addGap(31, 31, 31)
-                .addComponent(jRadioButton3)
+                .addComponent(jrCrearPlanilla)
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jButton1.setText("Salir");
+        jbSalir.setText("Salir");
+
+        jbIngresar.setText("Ingresar");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -95,9 +109,11 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(44, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(208, 208, 208))
+                .addGap(95, 95, 95)
+                .addComponent(jbIngresar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jbSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -105,7 +121,9 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
                 .addContainerGap(41, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbSalir)
+                    .addComponent(jbIngresar))
                 .addGap(15, 15, 15))
         );
 
@@ -123,25 +141,25 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void jrCrearUsarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrCrearUsarioActionPerformed
  
             frmCrearUsuario FRM = new frmCrearUsuario();
               FRM.setVisible(true);
         
         
         
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_jrCrearUsarioActionPerformed
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+    private void jrVerEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrVerEmpleadoActionPerformed
  
              frmBuscarUsuario FRM = new frmBuscarUsuario();
               FRM.setVisible(true);
         
         
         
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+    }//GEN-LAST:event_jrVerEmpleadoActionPerformed
 
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+    private void jrCrearPlanillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrCrearPlanillaActionPerformed
              
                 frmCrearPlanilla FRM = new frmCrearPlanilla();
                   FRM.setVisible(true);
@@ -149,7 +167,7 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
         
         
         
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
+    }//GEN-LAST:event_jrCrearPlanillaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -187,11 +205,13 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JButton jbIngresar;
+    private javax.swing.JButton jbSalir;
+    private javax.swing.JRadioButton jrCrearPlanilla;
+    private javax.swing.JRadioButton jrCrearUsario;
+    private javax.swing.JRadioButton jrVerEmpleado;
     // End of variables declaration//GEN-END:variables
 }
