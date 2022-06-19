@@ -1,14 +1,14 @@
 
 package proyecto1;
 
-import FORMULARIOS.FRMPRINCIPAL;
+import FORMULARIOS.frmPRINCIPAL;
 
 
 public class PROYECTO1 {
 
    
     public static void main(String[] args) {
-        FRMPRINCIPAL FRM=new FRMPRINCIPAL();
+        frmPRINCIPAL FRM=new frmPRINCIPAL();
         FRM.setVisible(true);
     }
     
