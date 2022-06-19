@@ -32,6 +32,7 @@ public class Usuario {
  private String ruta = "C:\\Usuarios";
  private String usuarios = "usuario.txt";
 // private String empleado = "empleados.txt";
+ //PUTO EL QUE LO LEA
  private final String separador = "|";
  
  public Usuario(){} 
