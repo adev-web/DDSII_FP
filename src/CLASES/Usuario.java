@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package CLASES;
 
 import java.io.File;
@@ -29,10 +25,9 @@ public class Usuario {
  private String año;
  private String direccion;
  private String telefono;
- private String ruta = "C:\\Usuarios";
+ private String ruta = "C:\\proyecto\\";
  private String usuarios = "usuario.txt";
-// private String empleado = "empleados.txt";
- //PUTO EL QUE LO LEA
+
  private final String separador = "|";
  
  public Usuario(){} 
@@ -61,6 +56,14 @@ public class Usuario {
     public String getNombre1() {
         return nombre1;
     }
+
+  public String getPassword() {
+    return password;
+  }
+
+  public void setPassword(String password) {
+    this.password = password;
+  }
 
     public void setNombre1(String nombre1) {
         this.nombre1 = nombre1;
@@ -207,7 +210,7 @@ public class Usuario {
         while(read.hasNextLine()){
         String  linea = read.nextLine()/*.split("\\|")*/;
         String [] arr = linea.split("\\|");
-        if(arr[0].equals(this.usuarios))
+        if(arr[0].equals(this.Cedula))
                 pw.println(this.Cedula +this.separador+
             this.password +this.separador+
             this.nombre1+this.separador+

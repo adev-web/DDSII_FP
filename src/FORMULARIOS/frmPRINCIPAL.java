@@ -4,13 +4,6 @@
  */
 package FORMULARIOS;
 
-import FORMULARIOS.frmBuscarUsuario;
-import FORMULARIOS.frmBuscarUsuario;
-import FORMULARIOS.frmCrearPlanilla;
-import FORMULARIOS.frmCrearPlanilla;
-import FORMULARIOS.frmCrearUsuario;
-import FORMULARIOS.frmCrearUsuario;
-
 /**
  *
  * @author termi
@@ -18,7 +11,7 @@ import FORMULARIOS.frmCrearUsuario;
 public class frmPRINCIPAL extends javax.swing.JFrame {
 
     /**
-     * Creates new form frmPRINCIPAL
+     * Creates new form FRMPRINCIPAL
      */
     public frmPRINCIPAL() {
         initComponents();
@@ -33,141 +26,243 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jrCrearUsario = new javax.swing.JRadioButton();
-        jrVerEmpleado = new javax.swing.JRadioButton();
-        jrCrearPlanilla = new javax.swing.JRadioButton();
-        jbSalir = new javax.swing.JButton();
-        jbIngresar = new javax.swing.JButton();
+        JLBcrearUsuario = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        JLBverEmpleado = new javax.swing.JLabel();
+        JLBcrearPlanilla = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        JLBexit = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("MENU"));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("MENU PRINCIPAL"));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-
-        buttonGroup1.add(jrCrearUsario);
-        jrCrearUsario.setText("Crear Usuario");
-        jrCrearUsario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jrCrearUsarioActionPerformed(evt);
+        JLBcrearUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLBcrearUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/icons8_add_user_male_96px.png"))); // NOI18N
+        JLBcrearUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        JLBcrearUsuario.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                JLBcrearUsuarioMouseMoved(evt);
             }
         });
-
-        buttonGroup1.add(jrVerEmpleado);
-        jrVerEmpleado.setText("Ver Empleado");
-        jrVerEmpleado.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jrVerEmpleadoActionPerformed(evt);
+        JLBcrearUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JLBcrearUsuarioMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JLBcrearUsuarioMouseExited(evt);
             }
         });
+        jPanel1.add(JLBcrearUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 140, 120));
 
-        buttonGroup1.add(jrCrearPlanilla);
-        jrCrearPlanilla.setText("Crear Planilla");
-        jrCrearPlanilla.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jrCrearPlanillaActionPerformed(evt);
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 233, 222));
+        jLabel3.setText("Crear Usuario");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, -1, -1));
+
+        JLBverEmpleado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLBverEmpleado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/icons8_find_user_male_96px.png"))); // NOI18N
+        JLBverEmpleado.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                JLBverEmpleadoMouseMoved(evt);
             }
         });
+        JLBverEmpleado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JLBverEmpleadoMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JLBverEmpleadoMouseExited(evt);
+            }
+        });
+        jPanel1.add(JLBverEmpleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, 140, 120));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jrCrearPlanilla)
-                    .addComponent(jrVerEmpleado)
-                    .addComponent(jrCrearUsario))
-                .addContainerGap(261, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jrCrearUsario)
-                .addGap(33, 33, 33)
-                .addComponent(jrVerEmpleado)
-                .addGap(31, 31, 31)
-                .addComponent(jrCrearPlanilla)
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
+        JLBcrearPlanilla.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLBcrearPlanilla.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/icons8_insert_table_96px_9.png"))); // NOI18N
+        JLBcrearPlanilla.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                JLBcrearPlanillaMouseMoved(evt);
+            }
+        });
+        JLBcrearPlanilla.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JLBcrearPlanillaMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JLBcrearPlanillaMouseExited(evt);
+            }
+        });
+        jPanel1.add(JLBcrearPlanilla, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 220, 130, 120));
 
-        jbSalir.setText("Salir");
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel5.setText("Ver Empleado");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 340, -1, -1));
 
-        jbIngresar.setText("Ingresar");
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 51, 153));
+        jLabel6.setText("Crear Planilla");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 340, 110, 30));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(44, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(95, 95, 95)
-                .addComponent(jbIngresar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jbSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(41, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jbSalir)
-                    .addComponent(jbIngresar))
-                .addGap(15, 15, 15))
-        );
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/icons8_user_150px_2.png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 160, 140));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 51));
+        jLabel8.setText("Jose Gonzalez");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 250, 40));
+
+        JLBexit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/icons8_Close_40px_2.png"))); // NOI18N
+        JLBexit.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                JLBexitMouseMoved(evt);
+            }
+        });
+        JLBexit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JLBexitMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JLBexitMouseExited(evt);
+            }
+        });
+        jPanel1.add(JLBexit, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 0, 40, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/fondo-color-verde-azul-neon-claro-fondo-degradado-borroso-abstracto-plantilla-banner_335640-3440 (1).jpg"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, -4, 790, 450));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 435, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jrCrearUsarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrCrearUsarioActionPerformed
+    private void JLBcrearUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBcrearUsuarioMouseClicked
  
-            frmCrearUsuario FRM = new frmCrearUsuario();
-              FRM.setVisible(true);
+       
         
         
+         //AQUI PROGRAMAS MIKExd
+           
+           
+           
+         
+         
+           
         
-    }//GEN-LAST:event_jrCrearUsarioActionPerformed
+    }//GEN-LAST:event_JLBcrearUsuarioMouseClicked
 
-    private void jrVerEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrVerEmpleadoActionPerformed
+    private void JLBcrearUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBcrearUsuarioMouseMoved
  
-             frmBuscarUsuario FRM = new frmBuscarUsuario();
-              FRM.setVisible(true);
+        JLBcrearUsuario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
         
-        
-        
-    }//GEN-LAST:event_jrVerEmpleadoActionPerformed
+    }//GEN-LAST:event_JLBcrearUsuarioMouseMoved
 
-    private void jrCrearPlanillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrCrearPlanillaActionPerformed
-             
-                frmCrearPlanilla FRM = new frmCrearPlanilla();
-                  FRM.setVisible(true);
+    private void JLBcrearUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBcrearUsuarioMouseExited
+      
+         JLBcrearUsuario.setBorder(null);
+   
+         
+    }//GEN-LAST:event_JLBcrearUsuarioMouseExited
+
+    private void JLBverEmpleadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBverEmpleadoMouseClicked
+      
+       
+        //AQUI PROGRAMAS MIKE
+           
+           
+           
+           
+           
+           
+           
+        
+    }//GEN-LAST:event_JLBverEmpleadoMouseClicked
+
+    private void JLBverEmpleadoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBverEmpleadoMouseMoved
+      
+        JLBverEmpleado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        
+        
+        
+    }//GEN-LAST:event_JLBverEmpleadoMouseMoved
+
+    private void JLBverEmpleadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBverEmpleadoMouseExited
+
+        JLBverEmpleado.setBorder(null);                                                     
+  
+    }//GEN-LAST:event_JLBverEmpleadoMouseExited
+
+    private void JLBcrearPlanillaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBcrearPlanillaMouseClicked
+
+     
+        
+        
+         //AQUI PROGRAMAS MIKE
+           
+           
+           
+         
+         
+         
+        
+        
+    }//GEN-LAST:event_JLBcrearPlanillaMouseClicked
+
+    private void JLBcrearPlanillaMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBcrearPlanillaMouseMoved
+ 
+           JLBcrearPlanilla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        
+   
+    }//GEN-LAST:event_JLBcrearPlanillaMouseMoved
+
+    private void JLBcrearPlanillaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBcrearPlanillaMouseExited
+
+            JLBcrearPlanilla.setBorder(null);
+          
+    }//GEN-LAST:event_JLBcrearPlanillaMouseExited
+
+    private void JLBexitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBexitMouseClicked
+
+      System.exit(0);
+
+
+
+
+    }//GEN-LAST:event_JLBexitMouseClicked
+
+    private void JLBexitMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBexitMouseMoved
+ 
+         JLBexit.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
         
         
         
         
-    }//GEN-LAST:event_jrCrearPlanillaActionPerformed
+    }//GEN-LAST:event_JLBexitMouseMoved
+
+    private void JLBexitMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBexitMouseExited
+
+        
+         JLBexit.setBorder(null);
+        
+        
+    }//GEN-LAST:event_JLBexitMouseExited
 
     /**
      * @param args the command line arguments
@@ -195,6 +290,9 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(frmPRINCIPAL.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -205,13 +303,16 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JLabel JLBcrearPlanilla;
+    private javax.swing.JLabel JLBcrearUsuario;
+    private javax.swing.JLabel JLBexit;
+    private javax.swing.JLabel JLBverEmpleado;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JButton jbIngresar;
-    private javax.swing.JButton jbSalir;
-    private javax.swing.JRadioButton jrCrearPlanilla;
-    private javax.swing.JRadioButton jrCrearUsario;
-    private javax.swing.JRadioButton jrVerEmpleado;
     // End of variables declaration//GEN-END:variables
 }

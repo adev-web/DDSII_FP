@@ -8,12 +8,12 @@ package FORMULARIOS;
  *
  * @author termi
  */
-public class FRMPRINCIPAL extends javax.swing.JFrame {
+public class frmPRINCIPAL extends javax.swing.JFrame {
 
     /**
      * Creates new form FRMPRINCIPAL
      */
-    public FRMPRINCIPAL() {
+    public frmPRINCIPAL() {
         initComponents();
     }
 
@@ -158,7 +158,7 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
        
         
         
-         //AQUI PROGRAMAS MIKE
+         //AQUI PROGRAMAS MIKExd
            
            
            
@@ -281,21 +281,23 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FRMPRINCIPAL.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmPRINCIPAL.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FRMPRINCIPAL.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmPRINCIPAL.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FRMPRINCIPAL.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmPRINCIPAL.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FRMPRINCIPAL.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmPRINCIPAL.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FRMPRINCIPAL().setVisible(true);
+                new frmPRINCIPAL().setVisible(true);
             }
         });
     }
