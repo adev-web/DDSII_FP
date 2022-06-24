@@ -37,6 +37,9 @@ public class Login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        BTNingresar = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        BTNregistrar = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -108,6 +111,33 @@ public class Login extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/icons8_user_150px_3.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, -1, -1));
+
+        BTNingresar.setBackground(new java.awt.Color(153, 255, 153));
+        BTNingresar.setText("OK");
+        BTNingresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTNingresarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BTNingresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 340, 80, 30));
+
+        jButton3.setBackground(new java.awt.Color(153, 255, 153));
+        jButton3.setText("SALIR");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, 80, 30));
+
+        BTNregistrar.setBackground(new java.awt.Color(153, 255, 153));
+        BTNregistrar.setText("CREAR");
+        BTNregistrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTNregistrarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BTNregistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 340, 80, 30));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/sci-fi-nebula-green-planet-space-hd-wallpaper-preview.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
@@ -223,6 +253,55 @@ public class Login extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jLabel4MouseEntered
 
+    private void BTNregistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNregistrarActionPerformed
+ 
+        
+        frmCrearUsuario FRM=new frmCrearUsuario();
+        FRM.setVisible(true);
+        // aqui mike
+        
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_BTNregistrarActionPerformed
+
+    private void BTNingresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNingresarActionPerformed
+
+        
+        
+        
+        //AQUI MIKE
+        
+        
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_BTNingresarActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+
+        
+        //AQUI MIKE
+        
+        
+        System.exit(0);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -262,8 +341,11 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BTNingresar;
+    private javax.swing.JButton BTNregistrar;
     private javax.swing.JPasswordField TXTpassword;
     private javax.swing.JTextField TXTusuario;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
