@@ -66,7 +66,7 @@ public class Empelado extends Usuario {
               + super.getNombre2() + this.separador
               + super.getApellido1() + this.separador
               + super.getApellido2() + this.separador
-              + fecha + this.separador
+              + this.fecha + this.separador
               + this.salarioHoras + this.separador
               + this.horasTrabajadas + this.separador
               + "");
@@ -140,7 +140,7 @@ public class Empelado extends Usuario {
             );
           } else {
             pw.println(linea);
-          }
+          } //FIN DEL IF
         } //FIN DEL WHILE
 
         pw.close();
@@ -156,8 +156,7 @@ public class Empelado extends Usuario {
     } catch (IOException e) {
       return false;
     }
-  }
-  //METODO ELIMINAR//
+  }//METODO ELIMINAR//
 
   public boolean EliminarEmpleado() {
 
@@ -193,4 +192,21 @@ public class Empelado extends Usuario {
       return false;
     }
   }
-}
+
+  //MICROMETODOS
+  public double SalarioBruto() {
+    return horasTrabajadas * salarioHoras;
+  }
+
+  public double SeguroSocial() {
+    return SalarioBruto() * 0.0975;
+  }
+
+  public double SeguroEducativo() {
+    return SalarioBruto() * 0.0125;
+  }
+
+  public double SalarioNeto() {
+    return SalarioBruto() - SeguroEducativo() - SeguroSocial();
+  }
+}//FIN DE LA CLASE
