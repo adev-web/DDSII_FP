@@ -116,7 +116,7 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel8.setText("Jose Gonzalez");
+        jLabel8.setText("Mike ");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 250, 40));
 
         JLBexit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/icons8_Close_40px_2.png"))); // NOI18N
@@ -212,8 +212,10 @@ public class frmPRINCIPAL extends javax.swing.JFrame {
     private void JLBcrearPlanillaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JLBcrearPlanillaMouseClicked
 
      
-        
-        
+     frmCrearPlanilla F = new frmCrearPlanilla();
+     
+     F.setVisible(true);
+     dispose();
          //AQUI PROGRAMAS MIKE
            
            

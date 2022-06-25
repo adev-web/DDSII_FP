@@ -4,7 +4,9 @@
  */
 package FORMULARIOS;
 
+import CLASES.Usuario;
 import java.awt.Color;
+import javax.swing.JOptionPane;
 import javax.swing.border.BevelBorder;
 
 /**
@@ -113,7 +115,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, -1, -1));
 
         BTNingresar.setBackground(new java.awt.Color(153, 255, 153));
-        BTNingresar.setText("OK");
+        BTNingresar.setText("Ingresar");
         BTNingresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BTNingresarActionPerformed(evt);
@@ -268,8 +270,17 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_BTNregistrarActionPerformed
 
     private void BTNingresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNingresarActionPerformed
-
+         Usuario OBJ = new Usuario();
         
+    if(TXTusuario.equals(OBJ.getCedula()) && TXTpassword.equals(OBJ.getPassword())){
+       
+        frmPRINCIPAL N = new frmPRINCIPAL();
+        N.setVisible(true);
+      
+    
+    }else {
+         JOptionPane.showMessageDialog(null, "No se encontró su Usuario.\nLo debe Crear o Digitar el Correcto");
+    }
         
         
         //AQUI MIKE

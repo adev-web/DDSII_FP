@@ -122,11 +122,17 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="-Eliminar Empleado"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbEliminarActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jbAdicionar">
               <Properties>
                 <Property name="text" type="java.lang.String" value="+Adicionar Empleado"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbAdicionarActionPerformed"/>
+              </Events>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane2">
               <AuxValues>
@@ -222,6 +228,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Regresar"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbRegresarActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jbContinuar">
               <Properties>
@@ -232,6 +241,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Mostrar"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbEliminar1ActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

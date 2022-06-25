@@ -138,6 +138,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Buscar"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbBuscar1ActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -300,6 +303,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;&lt;ATRAS"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbAtrasActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jbAgregar">
           <Properties>
@@ -308,6 +314,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="+AGREGAR"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbAgregarActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

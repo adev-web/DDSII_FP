@@ -4,6 +4,8 @@
  */
 package FORMULARIOS;
 
+import CLASES.Usuario;
+
 /**
  *
  * @author termi
@@ -84,12 +86,27 @@ public class frmCrearUsuario extends javax.swing.JFrame {
         jLabel9.setText("Telefono");
 
         jbAtras.setText("ATRAS");
+        jbAtras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbAtrasActionPerformed(evt);
+            }
+        });
 
         jbCrear.setText("CREAR");
+        jbCrear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbCrearActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Password");
 
         jButton1.setText("Modificar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -106,9 +123,9 @@ public class frmCrearUsuario extends javax.swing.JFrame {
                     .addComponent(txtDireccion))
                 .addGap(15, 15, 15))
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
+                .addGap(72, 72, 72)
                 .addComponent(jbAtras)
-                .addGap(53, 53, 53)
+                .addGap(35, 35, 35)
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jbCrear)
@@ -236,6 +253,24 @@ public class frmCrearUsuario extends javax.swing.JFrame {
     private void jcMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcMesActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jcMesActionPerformed
+
+    private void jbCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCrearActionPerformed
+   Usuario OBJ = new Usuario();
+        
+        OBJ.CrearUsuario();        // TODO add your handling code here:
+    }//GEN-LAST:event_jbCrearActionPerformed
+
+    private void jbAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbAtrasActionPerformed
+        Login j = new Login();
+         j.setVisible(true);
+         dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_jbAtrasActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+         Usuario OBJ = new Usuario();
+        
+        OBJ.ModificarUsuario();       // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

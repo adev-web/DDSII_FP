@@ -4,6 +4,10 @@
  */
 package FORMULARIOS;
 
+import CLASES.Empelado;
+import CLASES.Usuario;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author termi
@@ -243,7 +247,10 @@ public class frmBuscarUsuario extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbBuscarActionPerformed
-        // TODO add your handling code here:
+      Usuario OBJ = new Usuario();
+        
+        OBJ.Buscar(); 
+            // TODO add your handling code here:
     }//GEN-LAST:event_jbBuscarActionPerformed
 
     private void jcMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcMesActionPerformed
